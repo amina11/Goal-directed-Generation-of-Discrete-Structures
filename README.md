@@ -105,13 +105,16 @@ To find the best lambda, run the python file `Entropy_models_validation_performa
 
 ##### RAML-like data augmentation and classic data augmentation
 
-The pre-generated augmented data (data/QM9/smiles_data_augmentation_RAML_Like.npz,data/QM9/smiles_data_augmentation.npz)  is included in the dropbox.
+The pre-generated augmented data (data/QM9/smiles_data_augmentation_RAML_Like.npz, data/QM9/smiles_data_augmentation.npz)  are included in the dropbox.
 
 If you want to generate the augmented data yourself, follow the instruction below:
 
-1. Go to the folder `/data/QM9` and run `python RAML_sample_generation_with_edit_distance.py` . It will take the QM9 training data and apply m-edit distnce augmentation where m is sampled from a distribution that is defined on RAML paper. It will produce a file `data/QM9/Edit_smiles.npz` which includes sampled edit distance, the probability of the sampled edit distance, augmented smiles, original smiles properties. 
+1. Go to the folder `/data/QM9` and run 
+`python RAML_sample_generation_with_edit_distance.py` 
+It will take the QM9 training data and apply m-edit distnce augmentation where m is sampled from a distribution that is defined on RAML paper. It will produce a file `data/QM9/Edit_smiles.npz` which includes sampled edit distance, the probability of the sampled edit distance, augmented smiles, original smiles properties. 
 
-2. Run `python prepare_augmented_data.py`. This will take the previesly generated file `Edit_smiles.npz` generate `data/QM9/smiles_data_augmentation_RAML_Like.npz`,`data/QM9/smiles_data_augmentation.npz` by removing the douplicated ones and also generating the correct label from the RDkit for the augmented smiles (for classic data augmentation). 
+2. Run `python prepare_augmented_data.py`
+This will take the previesly generated file `Edit_smiles.npz` generate `data/QM9/smiles_data_augmentation_RAML_Like.npz`,`data/QM9/smiles_data_augmentation.npz` by removing the douplicated ones and also generating the correct label from the RDkit for the augmented smiles (for classic data augmentation). 
 
 Now given the augmented data are generated and stored in data file, you can run standard lstm model by to train those baslines.
 
