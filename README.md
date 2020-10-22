@@ -124,3 +124,7 @@ python train_QM9_data_augmentation.py  --augmented_data '../../data/QM9/smiles_d
 
 python train_QM9_data_augmentation.py  --augmented_data '../../data/QM9/smiles_data_augmentation_RAML_Like.npz'
 ```
+
+
+## Pre-trained Models
+You can also find trained models saved in the dropbox link (https://www.dropbox.com/sh/cnt3j5hlf3z29f4/AABQpmFNkQPiygfx9OE2HVxAa?dl=0). To play with it, go to the folder  `/gencond/lstm/`  and run `Test-Conditional-LSTM-Simulation.ipynb` by specifying the model name and dataset path.
