@@ -24,7 +24,7 @@ https://www.dropbox.com/sh/cnt3j5hlf3z29f4/AABQpmFNkQPiygfx9OE2HVxAa?dl
 You can either generate the data following the instruction or directly download the folder named `data` in the dropbox and place it in the current directory. Once the data download/generated, you should have the following structure:
 
 ```sh
-Goal-directed-generation-of-molecules (root)
+Goal-directed-Generation-of-Discrete-Structures (root)
  |__  README.md
  |__  data
  |__  gencond
