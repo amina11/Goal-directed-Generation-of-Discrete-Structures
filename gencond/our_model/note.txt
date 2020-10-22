@@ -1,0 +1,2 @@
+1. prepare the data
+2. run generate_reward_distribution.py to generate nomalized reward table and coresponding sample index 
