@@ -6,7 +6,7 @@ This repository is the official implementation of [Goal-directed-Generation-of-D
 ## Requirements
 
 To code requires: 
-```sh
+```
 Python 3.6.9
 torch = 1.2.0a0+e6a7071
 numpy=1.16.4
